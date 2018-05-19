@@ -1,0 +1,104 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  text-decoration-line: none;
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+div {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div .boxes {
+  background: wheat;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 20px;
+}
+
+div header {
+  order: 1;
+  height: 100px;
+  flex: 0 1 100%;
+}
+div header img {
+  float: left;
+  width: 400px;
+  height: 125px;
+}
+div header ul {
+  text-align: right;
+}
+div header ul li {
+  display: inline-block;
+  font-size: 30px;
+  padding: 25px;
+}
+div article {
+  order: 2;
+  flex: 0 1 25%;
+}
+div article ul li {
+  font-size: 30px;
+  padding: 25px;
+}
+div nav {
+  order: 3;
+  min-height: 400px;
+  flex: 1;
+}
+div nav section {
+  width: 100%;
+  border: 1px solid black;
+}
+div nav section a {
+  float: right;
+  color: red;
+  padding: 5px;
+  background: yellow;
+}
+div section {
+  order: 4;
+  flex: 0 1 15%;
+}
+div section section {
+  width: 100%;
+  height: 150px;
+  background: red;
+  border: 1px solid black;
+}
+div section section img {
+  width: 100%;
+  max-height: 100%;
+  line-height: 100%;
+  cursor: pointer;
+}
+div footer {
+  order: 5;
+  flex: 0 1 100%;
+}
+div footer img {
+  width: 100px;
+  float: left;
+}
+div footer li {
+  padding-left: 15px;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+  div {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+}

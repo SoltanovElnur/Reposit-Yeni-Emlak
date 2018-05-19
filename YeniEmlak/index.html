@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <title>YeniEmlak</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="">
+        <ul>
+            <li>
+                <a href="">Ana sehife</a>
+            </li>
+            <li>
+                <a href="">Axtaris</a>
+            </li>
+            <li>
+                <a href="">Rieltor</a>
+            </li>
+            <li>
+                <a href="">Faydali</a>
+            </li>
+            <li>
+                <a href="">Elaqe</a>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text" value="Elan №">
+            <input type="text" class="btn" disabled>
+        </div>
+        <div class="add">
+            <a href="">+ Elan ver</a>
+        </div>
+    </header>
+    <menu class="container">
+        <section class="center">
+            <section class="head">
+                <section class="right">
+                    <div class="left_s">
+                        <label for="">
+                            <span>Emlakin novu</span>
+                            <select name="emlak" id="emlak">
+                                <option value="1">Bina ve menzil</option>
+                                <option value="2">Heyet evi</option>
+                                <option value="3">Torpaq sahesi</option>
+                                <option value="4">Obyekt</option>
+                                <option value="5">Ofis</option>
+                                <option value="6">Qaraj</option>
+                                <option value="7">Diger</option>
+                            </select>
+                        </label>
+                        <label for="">
+                            <span>Elanin novu</span>
+                            <select name="elan" id="elan">
+                                <option value="1">Satilir</option>
+                                <option value="2">Kiraye Ayliq</option>
+                                <option value="3">Kiraye Gunluk</option>
+                            </select>
+                        </label>
+                        <label for="">
+                            <span>Seher</span>
+                            <select name="seher" id="seher">
+                                <option value="1">Butun seherler</option>
+                                <option value="2">Absehon</option>
+                                <option value="3">Baki</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="right_s">
+                        <label for="qiymet">
+                            <span>Qiymet</span>
+                            <select name="min" id="min">
+                                <option value="1">min</option>
+                                <option value="2">1000</option>
+                                <option value="3">10000</option>
+                                <option value="4">50000</option>
+                            </select>
+                            <select name="max" id="max">
+                                <option value="1">max</option>
+                                <option value="2">5000</option>
+                                <option value="3">50000</option>
+                                <option value="4">100000</option>
+                            </select>
+                        </label>
+                        <label for="mertebe">
+                            <span>Mertebe</span>
+                            <select name="min" id="min">
+                                <option value="1"></option>
+                                <option value="2">2</option>
+                                <option value="3">4</option>
+                                <option value="4">8</option>
+                                <option value="5">16</option>
+                            </select>
+                            <select name="max" id="max">
+                                <option value="1"></option>
+                                <option value="2">4</option>
+                                <option value="3">8</option>
+                                <option value="4">16</option>
+                                <option value="5">20</option>
+                            </select>
+                        </label>
+                        <label for="otaq">
+                            <span>Otaq</span>
+                            <select name="min" id="max">
+                                <option value="1"></option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                            </select>
+                            <select name="min" id="max">
+                                <option value="1"></option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                                <option value="5">4</option>
+                            </select>
+                        </label>
+                        <label for="sahesi">
+                            <span>Sahesi</span>
+                            <select name="min" id="min">
+                                <option value="1">min</option>
+                                <option value="2">10</option>
+                                <option value="3">50</option>
+                                <option value="4">100</option>
+                                <option value="5">120</option>
+                            </select>
+                            <select name="max" id="max">
+                                <option value="1">max</option>
+                                <option value="2">10</option>
+                                <option value="3">50</option>
+                                <option value="4">100</option>
+                                <option value="5">120</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="bottom">
+                        <a href="">
+                            <span>Etrafli axtaris |</span>
+                        </a>
+                        <input type="checkbox" id="photo" value="1">
+                        <label for="">
+                            <span>Yalniz sekilli |</span>
+                        </label>
+                        <input type="checkbox" id="kredit" value="1">
+                        <label for="kredit" class="credit">
+                            <span>Kredit</span>
+                        </label>
+                        <input type="text" value="Axtar" class="axtar">
+                    </div>
+                </section>
+                <section class="user">
+                    <ul>
+                        <li style="background:#84ae3e;">
+                            <a href="" style="color: white;">Istifadeci girisi</a>
+                        </li>
+                        <li>
+                            <a href="">Elan verilme qaydasi</a>
+                        </li>
+                        <li>
+                            <a href="">Elana duzelis ve silmek</a>
+                        </li>
+                        <li>
+                            <a href="">Bakida evlerin qiymeti</a>
+                        </li>
+                        <li>
+                            <a href="">Odenisli elan verilmesi</a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="vip">
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add5.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add6.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add7.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add8.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add9.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add10.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add11.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add12.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add13.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add14.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add5.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add6.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add7.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add8.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add9.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add10.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add11.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add12.jpeg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add13.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add14.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add11.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add14.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/vip_add.png" alt="">
+                    <div class="bottom">
+                        <span>Sizin elan burada</span>
+                        <span>Vip elan elave et</span>
+                    </div>
+                </div>
+            </section>
+            <section class="sticer">
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add1.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add2.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add3.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="top">
+                        <span>70000</span>
+                        <span>AZN / Satilir</span>
+                    </div>
+                    <img src="images/add4.jpg" alt="">
+                    <div class="bottom">
+                        <span>Heyet evi/ Villa 192 m2</span>
+                        <span>Baki, Bineqedi rayonu</span>
+                    </div>
+                </div>
+            </section>
+            <section class="mineUser">
+                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Sahib(Qaracop)</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vusal Qasimov</a></div>
+                <div><i class="fas fa-user"></i><a href="">Zirve Emlak</a></div>
+                <div><i class="fas fa-user"></i><a href="">Elsever</a></div>
+                <div><i class="fas fa-user"></i><a href="">Midiya</a></div>                
+                <div><i class="fas fa-user"></i><a href="">Ilahe</a></div>
+                <div><i class="fas fa-user"></i><a href="">Quliyev Anar</a></div>
+                <div><i class="fas fa-user"></i><a href="">Vaqif muellim</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+                <div><i class="fas fa-user"></i><a href="">Cebrailov Fexreddin</a></div>
+                <div><i class="fas fa-user"></i><a href="">Kamal</a></div>
+             </section>
+             <section class="kolbasan">
+                 <div><a href="">Bakida Gunluk Kiraye evler</a></div>
+                 <div><a href="">Bakida Ucuz Kiraye evler</a></div>
+                 <div><a href="">Bakida Gunluk Kiraye evler</a></div>
+                 <div><a href="">Bakida kreditle satilan evler</a></div>
+                 <div><a href="">Azerbaycan yay istiraheti</a></div>
+                 <div><a href="">qubada kiraye bag evi</a></div>
+                 <div><a href="">Gede bilmeyeceyniz yerler</a></div>
+                 <div><a href="">Sizlik deyil fakirler</a></div>
+                 <div><a href="">Falan filan inter milan</a></div>
+                 <div><a href="">Bakida Gunluk Kiraye evler</a></div>
+                 <div><a href="">Bakida kreditle satilan evler</a></div>
+                 <div><a href="">Azerbaycan yay istiraheti</a></div>
+                 <div><a href="">qubada kiraye bag evi</a></div>
+                 <div><a href="">Gede bilmeyeceyniz yerler</a></div>
+                 <div><a href="">Sizlik deyil fakirler</a></div>
+             </section>
+        </section>
+        <section class="reklam">
+            <a href="">
+                <img src="images/instaqram.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/gunluk_ev.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/ucuz_kiraye.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/yayaz.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/istban.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/yenigun.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/yenitemir.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/yeniavto.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="images/kredit.jpg" alt="">
+            </a>
+        </section>
+    </menu>
+    <div class="clear"></div>
+    <footer>
+    <span><p>Sayt administrasiyası verilən elanlara görə məsuliyyət daşımır.</p>
+        <p>Copyright © 2016. www.yeniemlak.az ! Bütün hüquqlar qorunur.</p>
+        <p>Tel: (+994 55) 261 21 26; E-mail: info@yeniemlak.az</p>
+        <img src="images/Screenshot_1.png" alt="">
+    </span>
+        
+    </footer>
+</body>
+
+</html>
